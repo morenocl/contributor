@@ -1,7 +1,7 @@
 name: "commit's maker"
 on:
   schedule:
-  - cron: "35 22 * * *"
+  - cron: "52 22 * * *"
 
 jobs:
   Commiter-job:
