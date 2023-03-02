@@ -1,7 +1,7 @@
 name: "commit's maker"
 on:
   schedule:
-  - cron: "52 22 * * *"
+  - cron: "57 22 * * *"
 
 jobs:
   Commiter-job:
@@ -11,8 +11,8 @@ jobs:
 
     - name: Setup git config
       run: |
-        git config user.name ${{ secrets.USER_NAME }}
-        git config user.email ${{ secrets.USER_EMAIL }}
+        git config --local user.name ${{ secrets.USER_NAME }}
+        git config --local user.email ${{ secrets.USER_EMAIL }}
 
     - name: Run script file
       run: |
